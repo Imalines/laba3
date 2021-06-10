@@ -18,7 +18,7 @@ function sendForm(name, email, text){
 }
 
 function successAdd(data){
-	alert('Обзор добавлен!');
+	alert('Расказ добавлен!');
 	document.otziv__form.reset();
 	commentClear();
 	loadotziv();

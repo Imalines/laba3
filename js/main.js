@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('#load__more__persons').click(
 		function (){
 			var countOfDog = document.getElementById('main__items').getElementsByClassName('dog_cart_main').length;
-			$.post("php/get_more_persons.php", {kol: 6, tek: countOfDog}, successMorePersons);
+			$.post("php/get_more_dog.php", {kol: 6, tek: countOfDog}, successMorePersons);
 		});
 });
 
@@ -16,7 +16,7 @@ function successLoad(data){
 	console.log(data);
 	for(var i in data)
 		{
-			let person = 
+			let dog = 
 			`	<div class="dog_cart_main">
 					<div class="dog__cart">
 							<div class="image__box">
@@ -25,10 +25,6 @@ function successLoad(data){
 
 							<div class="dog__cart__name">
 								${data[i].name}
-							</div>
-
-							<div class="dog__cart__group">
-								${data[i].group}
 							</div>
 
 							<div class="dog__cart__text">
@@ -43,7 +39,7 @@ function successLoad(data){
 						</div>
 					</div>
 				</div>`;
-			document.getElementById("main__items").insertAdjacentHTML('beforeend', person);
+			document.getElementById("main__items").insertAdjacentHTML('beforeend', dog);
 		}}
 
 function successMorePersons(data){
@@ -51,7 +47,7 @@ function successMorePersons(data){
 	console.log(data);
 	for(var i in data)
 		{
-			let person = 
+			let dog = 
 			`	<div class="dog_cart_main">
 					<div class="dog__cart">
 							<div class="image__box">
@@ -60,10 +56,6 @@ function successMorePersons(data){
 
 							<div class="dog__cart__name">
 								${data[i].name}
-							</div>
-
-							<div class="dog__cart__group">
-								${data[i].group}
 							</div>
 
 							<div class="dog__cart__text">
@@ -78,5 +70,5 @@ function successMorePersons(data){
 						</div>
 					</div>
 				</div>`;
-			document.getElementById("main__items").insertAdjacentHTML('beforeend', person);
+			document.getElementById("main__items").insertAdjacentHTML('beforeend', dog);
 }}

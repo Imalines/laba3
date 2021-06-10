@@ -8,8 +8,7 @@ body{
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
-	background-color: #E1F2FF;
-	background-image: url(../img/background_pop.png);
+	background-color: #084b7f;
 }
 .content__box{
 	max-width: 1088px;
@@ -87,7 +86,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #fff;
+	background-color: rgba(17, 203, 219, 0.79);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .image__box img{
@@ -100,7 +99,7 @@ body{
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dog__cart__group{
-	color:  #F178B6;
+	color: #e70f20;
 }
 .button__load__persons{
 	display: flex;
@@ -109,7 +108,7 @@ body{
 	margin: 0 auto;
 	padding: 10px;
 	font-size: 24px;
-	background-color: #F178B6;
+	background-color: #e70404;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	color: white;
 	outline: none;
@@ -150,7 +149,7 @@ body{
 	margin: 0 10px 0 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: normal;
 	line-height: 40px;
 }
 .otziv__form label{
@@ -178,12 +177,12 @@ body{
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .btn__submit{
-	background-color: #F178B6;
+	background-color: #e30202;
 }
 .btn__submit:hover{
 	font-size: 20px;
 	cursor: pointer;
-	background-color: #F167A5;
+	background-color: #360000;
 }
 #place__for__otziv{
 	margin: 20px 10px;
@@ -220,14 +219,14 @@ body{
 }
 .otziv__person__email{
 	font-size: 14px;
-	color:  #F178B6;
+	color: #f80000;
 }
 .make__otziv{
 	position: fixed;
 	right: 40px;
 	top: 80%;
 	padding: 10px;
-	background-color:  #F178B6;
+	background-color: #f10303;
 	color: white;
 	font-size: 16px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
